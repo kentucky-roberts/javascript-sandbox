@@ -1,0 +1,26 @@
+Statement of Intent:
+
+    Functionallity
+        -Get new playerNames & assign them to team1 || team2
+        -Dealer.loop(), deals a deck.card, that has a deck.card.phrase, to Team1.activePlayer || Team2.activePlayer, 
+            game continues dealer.dealNewHand() loop until either team reaches 10 points.
+        -
+
+            if (Team1.score == 10) {
+                alert("Team1 is the Winner!");
+                break;
+            } else if (Team2.score == 10) {
+                alert("Team2 is the Winner!");
+                break;
+            } else {
+                Dealer.dealNewHand();
+            }
+
+        
+    User Groups
+        -Website visitors who want to play game with local group of friends.
+
+    Screen Types
+        -mobile
+        -desktop
+        -tablet

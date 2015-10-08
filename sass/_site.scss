@@ -1,0 +1,336 @@
+@import "fonts/proxima-nova.scss";
+
+body {
+    font-family: proxima-nova;
+    color: #333;
+
+    h1 { 
+        font-size: 5em; 
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .game-container {
+        height: 800px;
+        width: 650px;
+        background: #ececec;
+        margin: auto;
+        padding: 5px;
+        color: #000;
+
+        .card-container {
+            margin: 50px 200px;
+
+            .card {
+                margin: 0;
+                padding: 15px;
+                background: #fff;
+                border: 1px solid black;
+                height: 400px;
+                width: auto;
+
+
+                p.phrase {
+                    font-size: 12px;
+                    text-align: center;
+                    font-weight: light;
+                    margin: auto;
+                    height: 100px;
+                    background: #ccc;
+                    color: #fff;
+
+                    button {
+
+                        margin: 40px auto 0 auto;
+
+                        .btnStart {
+                            background: green;
+                        }
+                    }
+                }
+            }
+        }
+
+        .message-container {
+            float: right;
+            width: 250px;
+            height: 50px;
+            text-align: left;
+            padding: 10px;
+            background: #000;
+            opacity: 0%;
+
+            .message {
+                color: green;
+                font-size: 14px;
+            }
+        }
+
+        .scoreboard-container {
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 150px;
+            text-align: left;
+            padding: 10px;
+
+            .scoreboard {
+                background: black;
+                font-size: 14px;
+                color: #fff;
+                border: 1px solid black;
+
+                table {
+                    padding: 15px;
+                    th {
+                        text-aligh: left;
+                        padding-left: 5px;
+                        padding-right: 25px;
+                    }
+                    td {
+                        margin-right: 5px;
+                    }
+                    tr.blue-team-score {
+                        color: black;
+                    }
+                    tr.red-team-score {
+                        color: black;
+                    }
+                }
+            }
+        }
+    } /* game-container */
+
+}
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'buoycons';
+    src: url(//cloud-cdn-digitalocean-com.global.ssl.fastly.net/assets/buoycons/buoycons-f49c3aa4c96cc838f4df2367d0fc2112.eot?-v603zj);
+    src: url(//cloud-cdn-digitalocean-com.global.ssl.fastly.net/assets/buoycons/buoycons-f49c3aa4c96cc838f4df2367d0fc2112.eot?#iefix-v603zj) format("embedded-opentype"), url(//cloud-cdn-digitalocean-com.global.ssl.fastly.net/assets/buoycons/buoycons-c905d4afa46b322903117d8f43143ab9.woff?-v603zj) format("woff"), url(//cloud-cdn-digitalocean-com.global.ssl.fastly.net/assets/buoycons/buoycons-38a78c8e085798a68a110c1c4542b67c.ttf?-v603zj) format("truetype"), url(//cloud-cdn-digitalocean-com.global.ssl.fastly.net/assets/buoycons/buoycons-4117232431d72131ed3eaad2ed806ade.svg?-v603zj#icomoon) format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+[class^="Icon--"]:before, [class*=" Icon--"]:before {
+    font-family: 'buoycons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.Icon--mail:before {
+    content: "\e60a"
+}
+
+.Icon--billing:before {
+    content: "\e60b"
+}
+
+.Icon--droplet:before {
+    content: "\e60c"
+}
+
+.Icon--edit:before {
+    content: "\e60d"
+}
+
+.Icon--upgrade:before {
+    content: "\e60e"
+}
+
+.Icon--transfer:before {
+    content: "\e60f"
+}
+
+.Icon--edit2:before {
+    content: "\e610"
+}
+
+.Icon--region:before {
+    content: "\e611"
+}
+
+.Icon--refresh:before {
+    content: "\e612"
+}
+
+.Icon--backup:before {
+    content: "\e613"
+}
+
+.Icon--arrowLeft:before {
+    content: "\e600"
+}
+
+.Icon--arrowRight:before {
+    content: "\e601"
+}
+
+.Icon--arrowUp:before {
+    content: "\e602"
+}
+
+.Icon--arrowDown:before {
+    content: "\e609"
+}
+
+.Icon--check:before {
+    content: "\e603"
+}
+
+.Icon--close:before {
+    content: "\e604"
+}
+
+.Icon--gear:before {
+    content: "\e605"
+}
+
+.Icon--sammy:before {
+    content: "\e606"
+}
+
+.Icon--search:before {
+    content: "\e607"
+}
+
+.Icon--wave:before {
+    content: "\e608"
+}
+
+.Icon--error:before {
+    content: "!";
+    font-weight: bold
+}
+
+.Icon--blue:before {
+    color: #298eea
+}
+
+.Icon--green:before {
+    color: #15CD72
+}
+
+.Icon--red:before {
+    color: #ED4F32
+}
+
+.is-flipped {
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.is-hidden {
+    display: none
+}
+
+.u-clearfix:after, .Revealer-shelf:after, .legacy.Revealer-shelf:after, .Tabs-content>.Tabs-pane:after, .u-clearfix.before, .before.Revealer-shelf, .Tabs-content>.before.Tabs-pane {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.u-clear {
+    clear: both
+}
+
+.u-textAlignCenter {
+    text-align: center
+}
+
+.u-textAlignRight {
+    text-align: right
+}
+
+.u-textAlignLeft {
+    text-align: left
+}
+
+.u-floatRight {
+    float: right !important
+}
+
+.u-floatLeft {
+    float: left !important
+}
+
+.u-equalHeight {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.u-equalHeight>* {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.u-equalHeight>.columns>* {
+    width: 100%
+}
+
+.u-capitalize {
+    text-transform: uppercase
+}
+
+.u-centerVertical {
+    display: block;
+    margin-top: 1.5rem
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 1rem
+}
+
+*, *:before, *:after {
+    box-sizing: border-box
+}
+
+body {
+    background: #ffffff;
+    color: #676767;
+    margin: 0 auto;
+    font-family: "proxima-nova", "proxima nova", "helvetica neue", "helvetica", "arial", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale
+}
+
+
+
+
+.ng-valid       {  }
+.ng-invalid     {  }
+.ng-pristine    {  }
+.ng-dirty       {  }
+.ng-touched     {  }
+
+/* really specific css rules applied by angular */
+.ng-invalid-required        {  }
+.ng-invalid-minlength       {  }
+.ng-valid-max-length        {  }

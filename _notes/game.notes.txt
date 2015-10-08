@@ -1,0 +1,34 @@
+360gz screen 
+
+loopCycle function(){
+    
+    [0] = Start a new frame (while the previous frame is handled by the display).
+    
+    [1] = Go through the list of requestAnimationFrame callbacks and invoke them.
+    
+    [2] = Perform garbage collection and other per-frame tasks when the above callbacks stop controlling the main thread.
+    
+    [3] = Sleep (unless an event interrupts the browser's nap) until the monitor is ready for your image (VSync) and repeat.
+}
+
+loopCycle must refresh once 
+    every 16-and-a-half milliseconds 
+    to keep up with a 60 Hz display.
+
+
+ 
+
+    1 second = 1000 milliseconds
+
+    16.5 milliseconds = 0.0165 second
+
+    refreshSyncPerSecond = 0.0165;
+
+
+
+
+window.requestAnimationFrame() 
+always provides a DOMHighResTimeStamp to callbacks as an argument when they are executed. 
+
+
+
