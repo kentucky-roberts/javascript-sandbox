@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+    color: #333;
+}
+#container {
+   width: 400px;
+   margin: auto;
+}
+h1 { font-size: 5em; }
+
+.hidden {
+    display: none;
+}
+
+.none {
+    display: none;
+}
+
+
+.message-screen {
+  bottom: 15px;
+  right: 0;
+  width: 150px;
+  height: 50px;
+  text-align: left;
+  padding: 10px;
+  background: #000;
+  opacity: 40%;
+  color: green;
+  font-size: 14px;
+}
